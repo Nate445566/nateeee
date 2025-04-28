@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>My Web Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.js">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Joshua</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#education">Education</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#contact">Contact Me</a></div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="download.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Joshua</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Welcome to my space! This is where my details are shown, if you like to know about me deeper, please proceed. </p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://www.facebook.com/profile.php?id=100030827951887" target="_blank">
+                            <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/watch?v=OOgvDiXl6hA&list=RDOOgvDiXl6hA&start_radio=1" target="_blank">
+                            <i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="img">
+                <img src="dog.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <h3 class="heading">About <span>Me</span></h3>
+                <p> I am 19 years old, and a computer engineering student at Cavite State University-CCAT Campus.
+                    Just like any other people, I love Dogs. I also love to watch korean dramas, be it fiction or
+                    nah. Aside from that, I like to read fiction to non-fiction books, regardless of the genre, 
+                    especially narratives from lawphil. Ultimately, I am a huge fan of genshin!</p>
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h2 class="mark">Educational <span>Attainment</span></h2>
+
+            <div class="education-container">
+                <div class="education-box">
+                    <h3> Primary<br>School</h3>
+                    <p> Amaya Elementary School<br>2012-2018</p>
+                </div>
+
+                <div class="education-box">
+                    <h3> Junior High School</h3>
+                    <p> Tanza National Comprehensive High School<br>2018-2022</p>
+                </div>
+
+                <div class="education-box">
+                    <h3> Senior High School</h3>
+                    <p> Holy Nazarene Christian School<br>2022-2023</p>
+                </div>
+            </div>
+        </section>
+        <!-- Tie
+        <section id="education" class="education">
+            <div class="educ-content">
+                <h1 class="mark">Educational <span>Attainment</span></h1>
+                <div class="box">
+                    <p> Amaya Elementart School<br>2012-2018</p>
+                </div>
+
+                <div class="box">
+                    <p> Tanza National Comprehensive High School<br>2018-2022</p>
+                </div>
+
+                <div class="box">
+                    <p> Holy Nazarene Christian School<br>2022-2024</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="contact" class="contact">
+            <h2 class="contact-me">Contact <span>Me</span></h2>
+
+            <form action="#">
+
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+
+                <textarea name="" id="" cols="30"
+                rows="10" placeholder="Message">
+                </textarea>
+                <input type="submit" value="Send Message" class="btn-1">
+
+            </form>
+        </section>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+
+</body>
+</html>
